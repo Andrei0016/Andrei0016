@@ -1,11 +1,9 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const fs = require('fs');
 
 async function run() {
     try {
-        const token = core.getInput('repo-token');
-        const octokit = github.getOctokit(token);
+        const octokit = github.getOctokit();
 
         const { owner, repo } = github.context.repo;
         const commits = await octokit.rest.repos.listCommits({ owner, repo });
@@ -26,23 +24,22 @@ async function run() {
 
         ![Snake](`;
         
-        const branchName = core.getInput('branch-name');
         const happyGifPath = `snake.svg`;
         const sadGifPath = `sad.gif`;
 
-        // Fetching GIFs from the specified branch
+        // Fetching GIFs from the output branch
         try {
             const happyGifResponse = await octokit.rest.repos.getContent({
                 owner,
                 repo,
                 path: happyGifPath,
-                ref: branchName,
+                ref: 'output', // Specify the branch name here
             });
             const sadGifResponse = await octokit.rest.repos.getContent({
                 owner,
                 repo,
                 path: sadGifPath,
-                ref: branchName,
+                ref: 'output', // Specify the branch name here
             });
 
             const happyGifUrl = happyGifResponse.data.download_url;
@@ -50,25 +47,11 @@ async function run() {
 
             readmeContent += snakeFed ? happyGifUrl : sadGifUrl;
         } catch (error) {
-            core.warning(`Failed to fetch GIFs from branch ${branchName}: ${error.message}`);
+            core.warning(`Failed to fetch GIFs from branch 'output': ${error.message}`);
             // Use default GIFs
             readmeContent += snakeFed ? happyGifPath : sadGifPath;
         }
 
         readmeContent += `)\n`;
 
-        // Update README.md file
-        await octokit.rest.repos.createOrUpdateFileContents({
-            owner,
-            repo,
-            path: 'README.md',
-            message: 'Update README.md',
-            content: Buffer.from(readmeContent).toString('base64'),
-            sha: github.context.sha,
-        });
-    } catch (error) {
-        core.setFailed(error.message);
-    }
-}
-
-run();
+     
