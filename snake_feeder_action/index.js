@@ -3,7 +3,8 @@ const github = require('@actions/github');
 
 async function run() {
     try {
-        const octokit = github.getOctokit();
+        const token = process.env.GITHUB_TOKEN;
+        const octokit = github.getOctokit(token);
 
         const { owner, repo } = github.context.repo;
         const commits = await octokit.rest.repos.listCommits({ owner, repo });
