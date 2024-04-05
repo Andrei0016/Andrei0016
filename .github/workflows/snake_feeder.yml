@@ -40,5 +40,5 @@ jobs:
           fi
           git add README.md
           git commit -m "Update README with commit count"
-          git push https://username:${{ secrets.PAT }}@github.com/Andrei0016/Andrei0016.git HEAD:main
+          git push https://Andrei0016:${{ secrets.PAT }}@github.com/Andrei0016/Andrei0016.git HEAD:main
 
