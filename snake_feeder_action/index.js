@@ -20,9 +20,9 @@ async function run() {
         core.setOutput('snake-fed', snakeFed);
 
         let readmeContent = `
-        # My Repository
+# My Repository
 
-        ![Snake](`;
+![Snake](`;
         
         const happyGifPath = `snake.svg`;
         const sadGifPath = `sad.gif`;
@@ -54,4 +54,18 @@ async function run() {
 
         readmeContent += `)\n`;
 
-     
+        // Update README.md file
+        await octokit.rest.repos.createOrUpdateFileContents({
+            owner,
+            repo,
+            path: 'README.md',
+            message: 'Update README.md',
+            content: Buffer.from(readmeContent).toString('base64'),
+            sha: github.context.sha,
+        });
+    } catch (error) {
+        core.setFailed(error.message);
+    }
+}
+
+run();
