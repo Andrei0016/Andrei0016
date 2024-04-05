@@ -3,6 +3,7 @@ name: Snake Feeder
 on:
   schedule:
     - cron: '0 0 * * *' # Run the action once a day
+  workflow_dispatch: # Allow manual triggering
 
 jobs:
   feed-snake:
