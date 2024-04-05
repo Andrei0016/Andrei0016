@@ -1,17 +1,36 @@
-name: Snake Feeder
+name: Check Weekly Commits
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Run the action once a day
-  workflow_dispatch: # Allow manual triggering
+    - cron: '0 0 * * 0' # Runs every Sunday at midnight
 
 jobs:
-  feed-snake:
+  check_commits:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Run Snake Feeder action
-        uses: ./snake_feeder_action
+
+      - name: Count Commits
+        id: count_commits
+        run: |
+          git fetch --depth=1 origin +refs/heads/main:refs/remotes/origin/main
+          COMMITS=$(git log --format='%H' --since='1 week ago' | wc -l)
+          echo "::set-output name=commit_count::$COMMITS"
+
+      - name: Fetch GIFs
+        uses: actions/checkout@v2
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          ref: branch-name
+
+      - name: Update README
+        run: |
+          if [ ${{ steps.count_commits.outputs.commit_count }} -lt 10 ]; then
+            echo "![Less Than 10 Commits](less_than_10.gif)" > README.md
+          else
+            echo "![More Than 10 Commits](snake.svg)" > README.md
+          fi
+          git add README.md
+          git commit -m "Update README with commit count"
+          git push
