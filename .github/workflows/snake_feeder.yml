@@ -1,6 +1,7 @@
 name: Check Weekly Commits
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * 0' # Runs every Sunday at midnight
 
