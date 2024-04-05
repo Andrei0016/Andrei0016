@@ -1,0 +1,5 @@
+name: 'Snake Feeder'
+description: 'Feeds the virtual snake based on the number of commits in the repository.'
+runs:
+  using: 'node12'
+  main: 'index.js'
