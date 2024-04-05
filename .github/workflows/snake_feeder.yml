@@ -14,8 +14,8 @@ jobs:
         run: |
           git config --global user.email "andreiciorteasuciu@gmail.com"
           git config --global user.name "Andrei Ciortea"
+          git config --global credential.helper store
 
-    
       - name: Checkout Repository
         uses: actions/checkout@v2
 
@@ -40,4 +40,4 @@ jobs:
           fi
           git add README.md
           git commit -m "Update README with commit count"
-          git push
+          it push https://username:${{ secrets.PAT }}@github.com/Andrei0016/Andrei0016.git HEAD:main
