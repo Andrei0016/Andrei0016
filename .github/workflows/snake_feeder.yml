@@ -22,7 +22,7 @@ jobs:
       - name: Fetch GIFs
         uses: actions/checkout@v2
         with:
-          ref: branch-name
+          ref: output
 
       - name: Update README
         run: |
