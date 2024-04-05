@@ -27,7 +27,7 @@ async function run() {
         ![Snake](`;
         
         const branchName = core.getInput('branch-name');
-        const happyGifPath = `snake.gif`;
+        const happyGifPath = `snake.svg`;
         const sadGifPath = `sad.gif`;
 
         // Fetching GIFs from the specified branch
