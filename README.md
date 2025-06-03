@@ -2,7 +2,7 @@
 <h3 align="center">I'm a student learning programming and machine learning. I also do game dev and web development</h3>
 
 ### Projects 📋:
-  - ["ML Problem Archive"](https://github.com/Andrei0016/ML-Problem-Archive), an archive of machine learning tasks I solved.
+  - [ML Problem Archive](https://github.com/Andrei0016/ML-Problem-Archive), an archive of machine learning tasks I solved.
      
   **Note:** A lot of the projects I started have never been finished so this isn't an accurate representation of my work.
 ### Learning 🌱:
