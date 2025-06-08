@@ -10,6 +10,7 @@
   - Kotlin
   - Kubernetes
   - Cloud Development
+  - Rust
 
 ### Contact 📫:
  - Mail: `contact@acsoft.dev`
