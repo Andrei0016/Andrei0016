@@ -6,7 +6,7 @@
      
   **Note:** A lot of the projects I started have never been finished so this isn't an accurate representation of my work.
 ### Learning 🌱:
-  - Machine learning (Fully Convolutional Networks, Reinforcement Learning, Computer Vision, Natural Language Processing)
+  - Machine learning (Fully Convolutional Networks, Reinforcement Learning, Computer Vision, Natural Language Processing, Recurrent Neural Networks)
   - Kotlin
   - Kubernetes
   - Cloud Development
