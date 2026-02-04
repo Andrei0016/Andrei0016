@@ -6,7 +6,7 @@
      
   **Note:** A lot of the projects I started have never been finished so this isn't an accurate representation of my work.
 ### Learning 🌱:
-  - Machine learning (Computer Vision, Natural Language Processing, Recurrent Neural Networks)
+  - Machine learning
   - Kotlin
   - Kubernetes
   - Cloud Development
@@ -25,4 +25,5 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=andrei0016&show_icons=true&theme=github_dark&locale=en" alt="andrei0016" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=andrei0016&theme=github_dark&" alt="andrei0016" /></p>
+
 
