@@ -3,6 +3,7 @@
 
 ### Projects 📋:
   - [ML Problem Archive](https://github.com/Andrei0016/ML-Problem-Archive), an archive of machine learning tasks I solved.
+  - [CNapSys-22586 Decode Robot Code](https://github.com/CNapSys-22586/22586-Decode), Robot code for FTC team 22586 CNapSys – Decode season
      
   **Note:** A lot of the projects I started have never been finished so this isn't an accurate representation of my work.
 ### Learning 🌱:
