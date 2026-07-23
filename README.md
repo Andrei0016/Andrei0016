@@ -6,9 +6,7 @@
      
   **Note:** A lot of the projects I started have never been finished so this isn't an accurate representation of my work.
 ### Learning 🌱:
-  - Machine learning
   - Kotlin
-  - Kubernetes
   - Cloud Development
   - Rust
 
