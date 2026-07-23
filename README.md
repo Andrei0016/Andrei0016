@@ -22,7 +22,7 @@
 <tr>
 <td valign="top">
 
-![GitHub Stats Card](https://ghstats.dev/api/card?username=Andrei0016&theme=sunset&border_radius=6)
+![GitHub Stats Card](https://ghstats.dev/api/card?username=Andrei0016&theme=sunset&border_radius=3)
 
 </td>
 <td valign="top">
