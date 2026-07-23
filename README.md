@@ -22,14 +22,14 @@
 <tr>
 <td valign="top">
 
-![GitHub Stats Card](https://ghstats.dev/api/card?username=Andrei0016&theme=sunset&border_radius=1)
+![GitHub Stats Card](https://ghstats.dev/api/card?username=Andrei0016&theme=sunset&border_radius=6)
 
 </td>
 <td valign="top">
 
 ![Contribution Sparkline](https://ghstats.dev/api/sparkline?username=Andrei0016&theme=sunset&days=30&width=320&height=80)
 
-![Top Languages](https://ghstats.dev/api/langs?username=Andrei0016&theme=sunset&border_radius=4&layout=vertical_list)
+![Top Languages](https://ghstats.dev/api/langs?username=Andrei0016&theme=sunset&border_radius=6&layout=vertical_list)
 
 </td>
 </tr>
