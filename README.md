@@ -8,7 +8,6 @@
   **Note:** A lot of the projects I started have never been finished so this isn't an accurate representation of my work.
 ### Learning 🌱:
   - Kotlin
-  - Cloud Development
   - Rust
 
 ### Contact 📫:
