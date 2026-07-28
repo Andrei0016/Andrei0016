@@ -15,10 +15,10 @@
 <p align="left">
 </p>
 
-## Languages and Tools:
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,c,cs,cpp)](https://skillicons.dev)
+## Languages and Tools 🧰:
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,c,cs,cpp,anaconda,androidstudio,arduino,aws,bash,clion.cmake,cloudflare,css,debian,discord,docker,git,github,gitlabidea,ai,js,java,kali,kubernetes,linux,lua,md,mysql,nodejs,opencv,powershell,py,pycharm,pytorch,raspberrypi,react,sklearn,tensorflow,unity,ubuntu,vscodium,vscode,webstorm,windows)](https://skillicons.dev)
 
-## GitHub Stats:
+## GitHub Stats 📊:
 
 <img align="left" width="480" src="https://ghstats.dev/api/card?username=Andrei0016&theme=sunset&border_radius=1" alt="GitHub Stats Card" />
 <img width="320" src="https://ghstats.dev/api/sparkline?username=Andrei0016&theme=sunset&days=30&width=320&height=80" alt="Contribution Sparkline" />
