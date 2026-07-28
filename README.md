@@ -16,7 +16,7 @@
 </p>
 
 ## Languages and Tools 🧰:
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,c,cs,cpp,anaconda,androidstudio,arduino,aws,bash,clion,cmake,cloudflare,css,debian,discord,docker,git,github,gitlabidea,ai,js,java,kali,kubernetes,linux,lua,md,mysql,nodejs,opencv,powershell,py,pycharm,pytorch,raspberrypi,react,sklearn,tensorflow,unity,ubuntu,vscodium,vscode,webstorm,windows)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,c,cs,cpp,anaconda,androidstudio,arduino,aws,bash,clion,cmake,cloudflare,css,debian,discord,docker,git,github,gitlab,idea,ai,js,java,kali,kubernetes,linux,lua,md,mysql,nodejs,opencv,powershell,py,pycharm,pytorch,raspberrypi,react,sklearn,tensorflow,unity,ubuntu,vscodium,vscode,webstorm,windows)](https://skillicons.dev)
 
 ## GitHub Stats 📊:
 
